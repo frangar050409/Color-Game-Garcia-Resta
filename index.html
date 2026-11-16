@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Great Guessing Game · Color Game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="h1"><span class="h1__chico">The Great</span> <span id="colorDisplay"></span> <span class="h1__chico">Guessing Game</span></h1>
+        <div id="stripe">
+            <button id="reset">Nuevos Colores</button>
+            <span id="message"></span>
+            <div class="modos">
+                <button class="mode">Easy</button>
+                <button class="mode selected">Hard</button>
+            </div>
+        </div>
+        <div class="marcador">
+            <p>Racha <strong id="racha">0</strong></p>
+            <p>Mejor racha <strong id="mejor">0</strong></p>
+            <p>Intentos <strong id="intentos">0</strong></p>
+        </div>
+        <div class="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <p class="atajos">Tip: también podés elegir con las teclas 1 a 6 y pedir nuevos colores con la barra espaciadora.</p>
+        <div class="chispas" id="chispas" aria-hidden="true"></div>
+        <script src="colorgame.js"></script>
+    </body>
+</html>
